@@ -9,16 +9,16 @@ namespace Movies.Library
     public class Movie
     {
         private readonly string _title;
-        private readonly string _category;
+        private readonly Enums.MovieCategories _category;
 
-        public Movie(string title, string category)
+        public Movie(string title, Enums.MovieCategories category)
         {
             _title = title;
             _category = category;
         }
 
         public string Title => _title;
-        public string Category => _category;
+        public Enums.MovieCategories Category => _category;
 
 
     }
